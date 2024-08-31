@@ -65,7 +65,7 @@ export default function PersonalizeServiceView() {
                     const randomNumber = Math.floor(Math.random() * 12) + 1;
                     setNumber(randomNumber - 1);
                 });
-            }, 5000); // Intervalo de 5000 ms (5 segundos)
+            }, 10000); // Intervalo de 5000 ms (5 segundos)
     
             // Limpieza del intervalo
             return () => {
