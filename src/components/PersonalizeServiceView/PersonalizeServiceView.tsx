@@ -1,10 +1,10 @@
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useFetch } from "../../hooks/useFetch";
 import { PersonalizeServiceData } from "../../interfaces/PersonalizeServiceProps";
 import { fetchPersonalizeServiceData } from "../../services/apiServices";
 import PersonalizeService from "../personalizeService/personalizeService";
-
+import { Animated, Easing } from "react-native";
 
 
 
@@ -13,6 +13,9 @@ export default function PersonalizeServiceView() {
 
     const [personalizeServiceData, setPersonalizeServiceData] = useState<PersonalizeServiceData[]>([]);
     const [number , setNumber] = useState<number>(0);
+
+    const fadeAnim = useRef(new Animated.Value(1)).current;
+    const translateAnim = useRef(new Animated.Value(0)).current;
     
 
     const { data, error } = useFetch({ fetchConst: fetchPersonalizeServiceData });
@@ -36,23 +39,40 @@ export default function PersonalizeServiceView() {
     useEffect(() => {
         if (personalizeServiceData.length > 0) {
             const intervalId = setInterval(() => {
-                const randomNumber = Math.floor(Math.random() * 3)+1;
-               
-                    setNumber(randomNumber-1);
-                
-                    //console.log(personalizeServiceData[number])
-                
-                //console.log(`url: ${personalizeServiceData[number]?.imagen}`);
-            }, 6000); // Intervalo de 5000 ms (5 segundos)
-            
+                Animated.sequence([
+                    Animated.timing(fadeAnim, {
+                        toValue: 0,
+                        duration: 500,
+                        useNativeDriver: true,
+                    }),
+                    Animated.timing(translateAnim, {
+                        toValue: 100,
+                        duration: 0,
+                        useNativeDriver: true,
+                    }),
+                    Animated.timing(fadeAnim, {
+                        toValue: 1,
+                        duration: 500,
+                        useNativeDriver: true,
+                    }),
+                    Animated.timing(translateAnim, {
+                        toValue: 0,
+                        duration: 500,
+                        easing: Easing.bounce,
+                        useNativeDriver: true,
+                    }),
+                ]).start(() => {
+                    const randomNumber = Math.floor(Math.random() * 12) + 1;
+                    setNumber(randomNumber - 1);
+                });
+            }, 5000); // Intervalo de 5000 ms (5 segundos)
+    
             // Limpieza del intervalo
             return () => {
                 clearInterval(intervalId);
             };
         }
-        
     }, [personalizeServiceData]);
-
     
 
  
