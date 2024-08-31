@@ -26,7 +26,7 @@ export default function PersonalizeService({mainText,description,button,obj}:Per
 
   
   const ima = obj?.imagen
-  console.log(ima)
+  console.log(obj)
 
    
 const num = 3
