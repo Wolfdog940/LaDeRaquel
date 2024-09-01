@@ -61,47 +61,47 @@ export const data ={
       {
         "id": 1,
         "nombre": "Facial Revitalizante",
-        "imagen": "https://example.com/images/tratamiento_facial.jpg"
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191691/services/facial_rveo1j.jpg'
       },
       {
         "id": 2,
         "nombre": "Corporal Tonificante",
-        "imagen": "https://example.com/images/tratamiento_corporal.jpg"
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191694/services/corporal_gipwla.jpg'
       },
       {
         "id": 3,
         "nombre": "Bienestar",
-        "imagen": "https://example.com/images/tratamiento_bienestar.jpg"
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191693/services/bienestar_tamaih.jpg'
       },
       {
         "id": 4,
         "nombre": "Manicura",
-        "imagen": "https://example.com/images/manicura.jpg"
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191691/services/manicura_fpixom.jpg'
       },
       {
         "id": 5,
         "nombre": "Pedicura",
-        "imagen": "https://example.com/images/pedicura.jpg"
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191692/services/pedicura_xbowf8.jpg'
       },
       {
         "id": 6,
         "nombre": "Depilación con Cera",
-        "imagen": "https://example.com/images/depilacion_cera.jpg"
+        "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725191707/services/cera_-_copia_hzswc2.jpg"
       },
       {
         "id": 7,
         "nombre": "Depilación Eléctrica",
-        "imagen": "https://example.com/images/depilacion_electrica.jpg"
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191692/services/electrica_bmf1qq.jpg'
       },
       {
         "id": 8,
         "nombre": "Extensión de Pestañas",
-        "imagen": "https://example.com/images/extension_pestanas.jpg"
+       'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191692/services/pesta%C3%B1as_d4fuhe.jpg'
       },
       {
         "id": 9,
         "nombre": "Maquillaje",
-        "imagen": "https://example.com/images/maquillaje_gala.jpg"
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191691/services/makeup_whatke.jpg'
       }
     ],
      ofertsnNews: [

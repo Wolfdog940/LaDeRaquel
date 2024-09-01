@@ -4,7 +4,7 @@ import { styles } from "./styles";
 import { CardProps } from "../../interfaces/cardProps";
 
 export default function Card({ mainText, description, button, obj }: CardProps) {
-  
+   
   return (
     <View style={styles.imageContainer}>
       <Image source={{ uri: obj?.imagen }} style={styles.image}/>

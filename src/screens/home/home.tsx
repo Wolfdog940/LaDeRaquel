@@ -1,12 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { Text, View, ImageBackground, StyleSheet } from 'react-native';
-import { styles } from '../../components/topBar/styles';
-import TopBar from '../../components/topBar/topBar';
-import { icons } from '../../assets/icons/icons';
+import { View } from 'react-native';
 import React from 'react';
 import TopBarView from '../../components/topBarView/topBarView';
-import PersonalizeService from '../../components/personalizeService/personalizeService';
 import PersonalizeServiceView from '../../components/PersonalizeServiceView/PersonalizeServiceView';
+import ServicesView from '../../components/servicesView/serviceView';
 
 export default function Home() {
 
@@ -15,6 +11,8 @@ export default function Home() {
     <View >
         <TopBarView/>
         <PersonalizeServiceView/>
+        <ServicesView/>
+
     </View>
     
     )
