@@ -1,5 +1,4 @@
-import { Text, View, ImageBackground, Image } from "react-native";
-import { PersonalizeServiceProps } from "../../interfaces/PersonalizeServiceProps";
+import { Text, View, Image } from "react-native";
 import ButtonNative from "../button/button";
 import { styles } from "./styles";
 import { CardProps } from "../../interfaces/cardProps";
