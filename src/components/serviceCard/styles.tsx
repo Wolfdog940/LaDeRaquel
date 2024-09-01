@@ -5,7 +5,7 @@
 export const styles = StyleSheet.create({
     container:{
         marginTop: 10,
-        marginHorizontal: 8,
+        paddingHorizontal: 10,
     },
     text:{
         marginTop: 10,
