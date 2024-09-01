@@ -60,8 +60,7 @@ export default function ServicesView () {
                     }}
                     snapToAlignment="center"
                     decelerationRate="fast"
-                    snapToInterval={300} // Ajusta según el ancho de cada tarjeta
-                    showsHorizontalScrollIndicator={false} 
+                   showsHorizontalScrollIndicator={false} 
                 />
         </View>
     )
