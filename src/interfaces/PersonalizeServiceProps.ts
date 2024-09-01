@@ -1,10 +1,9 @@
 export interface PersonalizeServiceProps {
-    mainText: string;
-    description: string;
-    
-    button: {
-        title: string;
-        onPress: () => void;
+    mainText: string; // Prop requerida
+    description?: string; // Prop opcional
+    button?: { // Prop opcional
+      title: string;
+      onPress: () => void;
     };
     obj: any;
 }

@@ -1,131 +1,107 @@
 
 export const data ={
     personalizeServices: [
-    {
-      'id': 1,
-      'titulo': "La belleza es la armonía de la forma y el color",
-      'descripcion': "Ofrecemos una amplia gama de tratamientos personalizados para lograr los resultados deseados.",
-      'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto5_uh6bpe.jpg'
-    },
-    {
-      "id": 2,
-      "titulo": "Tratamientos faciales rejuvenecedores",
-      "descripcion": "Nuestros tratamientos faciales combinan tecnología avanzada con ingredientes naturales para revitalizar la piel.",
-      "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto9_nvcny8.jpg"
-      
-    },
-    {
-      "id": 3,
-      "titulo": "Relajación total con masajes terapéuticos",
-      "descripcion": "Disfruta de masajes diseñados para aliviar el estrés y mejorar el bienestar físico y mental.",
-      "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto10_qmw9ox.jpg"
-    },
-    {
-      "id": 4,
-      "titulo": "Cuidado capilar de lujo",
-      "descripcion": "Servicios de peluquería que nutren y embellecen tu cabello con productos de alta calidad.",
-      "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto6_jrjwdl.jpg"
-    },
-    {
-      "id": 5,
-      "titulo": "Manicura y pedicura impecables",
-      "descripcion": "Tratamientos de uñas que combinan estilo y cuidado para un acabado perfecto.",
-      "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto8_s7h6ok.jpg"
-    },
-    {
-      "id": 6,
-      "titulo": "Depilación con cera para una piel suave",
-      "descripcion": "Eliminación del vello no deseado con técnicas de depilación profesional y resultados duraderos.",
-      "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto12_dumhzj.jpg"
-    },
-    {
-      "id": 7,
-      "titulo": "Maquillaje para cada ocasión",
-      "descripcion": "Desde looks naturales hasta estilos glamorosos, nuestro maquillaje resalta tu belleza única.",
-      "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725099596/personal-service/foto7_xl1rb7.jpg"
-    },
-    {
-      "id": 8,
-      "titulo": "Tratamientos corporales tonificantes",
-      "descripcion": "Rituales de belleza corporal que ayudan a esculpir y tonificar la figura.",
-      "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto4_zdbtlq.jpg"
-    },
-    {
-      "id": 9,
-      "titulo": "Terapias de spa para revitalizarte",
-      "descripcion": "Experiencias de spa que combinan lujo y relajación para rejuvenecer cuerpo y mente.",
-      "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto1_bkwk4e.jpg"
-    },
-    {
-      "id": 10,
-      "titulo": "Brillo perfecto con tratamientos de piel",
-      "descripcion": "Servicios diseñados para mejorar la textura y el tono de tu piel, dejándola luminosa.",
-      "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto3_ve1m5n.jpg"
-    },
-    {
-      "id": 11,
-      "titulo": "Corte y estilo personalizado",
-      "descripcion": "Encuentra tu estilo ideal con cortes personalizados que realzan tu personalidad.",
-      "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto2_r0suvv.jpg"
-    },
-    {
-      "id": 12,
-      "titulo": "Terapias de exfoliación corporal",
-      "descripcion": "Exfoliaciones que eliminan las células muertas para una piel más suave y renovada.",
-      "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto11_muzf9z.jpg"
-    },
+      {
+        'id': 1,
+        'titulo': "Un abrazo de frescura para tu rostro",
+        'descripcion': "Nuestros tratamientos faciales rejuvenecedores combinan la última tecnología con la pureza de ingredientes naturales, ofreciendo a tu piel un respiro de juventud y vitalidad.",
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto9_nvcny8.jpg'
+      },
+      {
+        'id': 2,
+        'titulo': "La luz que ilumina tu piel",
+        'descripcion': "Descubre la magia de nuestros tratamientos de piel que transforman la textura y el tono, dejándote con una luminosidad que resplandece de dentro hacia fuera.",
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto3_ve1m5n.jpg'
+      },
+      {
+        'id': 3,
+        'titulo': "Rituales corporales que enamoran",
+        'descripcion': "Sumérgete en nuestros tratamientos corporales tonificantes que esculpen y embellecen tu figura con caricias que despiertan todos tus sentidos.",
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto4_zdbtlq.jpg'
+      },
+      {
+        'id': 4,
+        'titulo': "La piel renovada que sueñas",
+        'descripcion': "Déjate envolver por la suavidad de nuestras terapias de exfoliación, que eliminan las huellas del tiempo y revelan una piel fresca y radiante.",
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto11_muzf9z.jpg'
+      },
+      {
+        'id': 5,
+        'titulo': "El arte de la relajación total",
+        'descripcion': "Vive la serenidad absoluta con nuestros masajes terapéuticos diseñados para liberar tensiones y elevar tu bienestar a un nuevo nivel de tranquilidad.",
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto10_qmw9ox.jpg'
+      },
+      {
+        'id': 6,
+        'titulo': "Un refugio de serenidad y bienestar",
+        'descripcion': "Descubre un santuario de calma donde cada tratamiento está diseñado para ofrecerte un momento de paz y renovación. Nuestros servicios te envuelven en una atmósfera de confort, brindándote un escape perfecto del ajetreo diario.",
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto1_bkwk4e.jpg'
+      },
+      {
+        'id': 7,
+        'titulo': "Manos que transforman y embellecen",
+        'descripcion': "Nuestros tratamientos de manicura y pedicura combinan estilo y cuidado en cada detalle, para ofrecerte un acabado perfecto que resalta tu elegancia.",
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto8_s7h6ok.jpg'
+      },
+      {
+        'id': 8,
+        'titulo': "Un toque de suavidad que perdura",
+        'descripcion': "La depilación con cera proporciona una piel lisa y sedosa, eliminando el vello no deseado con técnicas expertas para una suavidad duradera.",
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725099315/personal-service/foto12_dumhzj.jpg'
+      },
+      {
+        'id': 9,
+        'titulo': "El maquillaje que acentúa tu belleza",
+        'descripcion': "Desde looks delicados hasta estilos glamorosos, nuestro maquillaje realza tu belleza natural y te da la confianza para brillar en cada ocasión.",
+        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725099596/personal-service/foto7_xl1rb7.jpg'
+      },
     
   ],
     services: [
       {
         "id": 1,
-        "nombre": "Ndiva",
-        "imagen": "https://example.com/images/ndiva.jpg"
+        "nombre": "Facial Revitalizante",
+        "imagen": "https://example.com/images/tratamiento_facial.jpg"
       },
       {
         "id": 2,
-        "nombre": "Facial Rejuvenecedor",
-        "imagen": "https://example.com/images/facial_rejuvenecedor.jpg"
+        "nombre": "Corporal Tonificante",
+        "imagen": "https://example.com/images/tratamiento_corporal.jpg"
       },
       {
         "id": 3,
-        "nombre": "Masaje Relajante",
-        "imagen": "https://example.com/images/masaje_relajante.jpg"
+        "nombre": "Bienestar",
+        "imagen": "https://example.com/images/tratamiento_bienestar.jpg"
       },
       {
         "id": 4,
-        "nombre": "Corte de Cabello",
-        "imagen": "https://example.com/images/corte_cabello.jpg"
+        "nombre": "Manicura",
+        "imagen": "https://example.com/images/manicura.jpg"
       },
       {
         "id": 5,
-        "nombre": "Manicura Francesa",
-        "imagen": "https://example.com/images/manicura_francesa.jpg"
+        "nombre": "Pedicura",
+        "imagen": "https://example.com/images/pedicura.jpg"
       },
       {
         "id": 6,
-        "nombre": "Depilación Láser",
-        "imagen": "https://example.com/images/depilacion_laser.jpg"
+        "nombre": "Depilación con Cera",
+        "imagen": "https://example.com/images/depilacion_cera.jpg"
       },
       {
         "id": 7,
-        "nombre": "Maquillaje de Gala",
-        "imagen": "https://example.com/images/maquillaje_gala.jpg"
+        "nombre": "Depilación Eléctrica",
+        "imagen": "https://example.com/images/depilacion_electrica.jpg"
       },
       {
         "id": 8,
-        "nombre": "Peinado para Novias",
-        "imagen": "https://example.com/images/peinado_novias.jpg"
+        "nombre": "Extensión de Pestañas",
+        "imagen": "https://example.com/images/extension_pestanas.jpg"
       },
       {
         "id": 9,
-        "nombre": "Exfoliación Corporal",
-        "imagen": "https://example.com/images/exfoliacion_corporal.jpg"
-      },
-      {
-        "id": 10,
-        "nombre": "Terapia Spa",
-        "imagen": "https://example.com/images/terapia_spa.jpg"
+        "nombre": "Maquillaje",
+        "imagen": "https://example.com/images/maquillaje_gala.jpg"
       }
     ],
      ofertsnNews: [

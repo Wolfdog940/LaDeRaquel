@@ -1,9 +1,11 @@
 import { StyleSheet } from 'react-native';
 
+
+
 export const styles = StyleSheet.create({
     topBarContainer: {
         backgroundColor: '#fff',
-        marginTop: 50,
+        marginTop: 25,
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 10,

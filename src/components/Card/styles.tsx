@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
     position: 'relative',
     width: '100%',
     height: 350, // Ajusta según sea necesario
+    
   },
   image: {
     width: '100%',
@@ -34,7 +35,7 @@ export const styles = StyleSheet.create({
     color: 'white',
     fontSize: 15,
     textAlign: 'center',
-    marginHorizontal: 40,
+    marginHorizontal: 20,
     marginTop: 10,
   },
   buttonContainer: {
