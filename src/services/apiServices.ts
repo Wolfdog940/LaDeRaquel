@@ -24,3 +24,17 @@ export const fetchServiceData = async () => {
         throw new Error('Error fetching personalize service data');
     }
 };
+
+
+
+
+export const fetchServiceTreatmentData = async () => {
+    try {
+        const serviceTreatments = data.serviceTreatments;
+        return serviceTreatments;
+        
+    } catch (error) {
+        console.error(`Este error del fetch apiServices: ${error}`);
+        throw new Error('Error fetching personalize service data');
+    }
+};

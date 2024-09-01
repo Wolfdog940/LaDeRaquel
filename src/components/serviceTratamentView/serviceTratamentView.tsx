@@ -1,17 +1,15 @@
-import { useCallback, useEffect, useState } from "react";
-import { useFetch } from "../../hooks/useFetch"
-import { fetchServiceData } from "../../services/apiServices"
+import { useState, useEffect } from "react";
+import { FlatList, Text, View } from "react-native";
+import { useFetch } from "../../hooks/useFetch";
 import { ServiceDataProps } from "../../interfaces/serviceDataProps";
-import { FlatList, Vibration, View, Text } from "react-native";
+import { fetchServiceTreatmentData } from "../../services/apiServices";
+import ServiceTratamentCard from "../serviceTratamentCard/serviceTratamentCard";
 import * as Haptics from 'expo-haptics'; // Import the Haptics module
 import { styles } from "./styles";
-import ServiceTratamentCard from "../serviceTratamentCard/serviceTratamentCard";
 
-
-export default function ServicesView () {
-
-    const {data,error} = useFetch ({fetchConst:fetchServiceData});
-    const [servicesData, setServicesData] = useState<ServiceDataProps[]>([]);
+export default function serviceTratamentView(){
+    const {data,error} = useFetch ({fetchConst:fetchServiceTreatmentData});
+    const [servicesTratament, SetserviceTratament] = useState<ServiceDataProps[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleScroll = (event: { nativeEvent: { contentOffset: any; layoutMeasurement: any; }; }) => {
@@ -27,21 +25,21 @@ export default function ServicesView () {
 
     useEffect(() => {
         if(data){
-            setServicesData(data);
-            console.log(servicesData)
+            SetserviceTratament(data);
+            console.log(servicesTratament)
         }else if(error){
             console.error("Error fetching data:", error);}
     }, [data, error]);
 
     return(
         <View style={styles.container}>
-            <Text style={styles.text}>Nuestros Tratamientos </Text>
+            <Text style={styles.text}>Nuestros servicios </Text>
             <FlatList
                     
-                    data={servicesData}
-                    keyExtractor={serviceData => serviceData.nombre}
+                    data={servicesTratament}
+                    keyExtractor={serviceTratament => serviceTratament.imagen}
                     renderItem={({ item }) =>  {
-                       
+                        item
                         return (
                             <ServiceTratamentCard 
                                 mainText={item.nombre}
@@ -63,4 +61,5 @@ export default function ServicesView () {
                 />
         </View>
     )
-};
+    
+}

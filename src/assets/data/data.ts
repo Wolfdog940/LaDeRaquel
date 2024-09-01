@@ -104,6 +104,25 @@ export const data ={
         'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191691/services/makeup_whatke.jpg'
       }
     ],
+    serviceTreatments:[
+      {
+        "id": 1,
+        "nombre": "Zionic ",
+        "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725201596/service-treatments/zionic_dwrinu.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "Indiba  ",
+        "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725201634/service-treatments/Untitled-design-15_zld2tm.png"
+      },
+      {
+        "id": 3,
+        "nombre": "Imperium",
+        "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725201588/service-treatments/imperium_gw1jjo.jpg"
+      },
+  
+
+    ],
      ofertsnNews: [
     {
       "id": 1,
