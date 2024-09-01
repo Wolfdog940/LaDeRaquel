@@ -1,11 +1,10 @@
-import { Text, View, ImageBackground, Image } from "react-native";
-import { PersonalizeServiceProps } from "../../interfaces/PersonalizeServiceProps";
+import { Text, View, Image } from "react-native";
 import ButtonNative from "../button/button";
 import { styles } from "./styles";
 import { CardProps } from "../../interfaces/cardProps";
 
 export default function Card({ mainText, description, button, obj }: CardProps) {
-  
+   
   return (
     <View style={styles.imageContainer}>
       <Image source={{ uri: obj?.imagen }} style={styles.image}/>
