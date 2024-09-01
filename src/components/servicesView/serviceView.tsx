@@ -4,9 +4,8 @@ import { fetchServiceData } from "../../services/apiServices"
 import { ServiceDataProps } from "../../interfaces/serviceDataProps";
 import { FlatList, Vibration, View, Text } from "react-native";
 import * as Haptics from 'expo-haptics'; // Import the Haptics module
-
-import ServiceCard from "../serviceCard/serviceCard";
 import { styles } from "./styles";
+import ServiceTratamentCard from "../serviceCard/serviceTratamentCard";
 
 export default function ServicesView () {
 
@@ -41,10 +40,10 @@ export default function ServicesView () {
                     
                     data={servicesData}
                     keyExtractor={serviceData => serviceData.nombre}
-                    renderItem={({ item, index }) =>  {
-                        console.log(`este es el item ${JSON.stringify(item)}`); 
+                    renderItem={({ item }) =>  {
+                       
                         return (
-                            <ServiceCard 
+                            <ServiceTratamentCard 
                                 mainText={item.nombre}
                                 obj={item} 
                             />

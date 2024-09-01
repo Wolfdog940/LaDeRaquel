@@ -4,7 +4,7 @@ import ButtonNative from "../button/button";
 import { CardProps } from "../../interfaces/cardProps";
 import { styles } from "./styles";
 
-export default function ServiceCard({ mainText,  obj }: CardProps) {
+export default function ServiceTratamentCard({ mainText,  obj }: CardProps) {
    
   return (
     <View style={styles.container}>
