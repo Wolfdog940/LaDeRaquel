@@ -3,8 +3,10 @@ import { useState, useEffect } from "react";
 import { useFetch } from "../../hooks/useFetch";
 import { PersonalizeServiceData } from "../../interfaces/PersonalizeServiceProps";
 import { fetchPersonalizeServiceData } from "../../services/apiServices";
-import Card from "../Card/Card";
 import { Text } from "react-native";
+import { styles } from "./styles";
+import Card from "../Card/card";
+
 
 
 export default function PersonalizeServiceView() {
@@ -39,9 +41,9 @@ export default function PersonalizeServiceView() {
         <>
             {personalizeServiceData.length > 0 && number1 >= 0 && number1 < personalizeServiceData.length ? (
                 <Card
-                    mainText={personalizeServiceData[number1]?.titulo}
+                    
                     obj={personalizeServiceData[number1]}
-                    description={personalizeServiceData[number1]?.descripcion}
+                    styles={styles}
                     button={{
                         title: 'Reservar cita',
                         onPress: function (): void {

@@ -5,7 +5,8 @@ import { ServiceDataProps } from "../../interfaces/serviceDataProps";
 import { FlatList, Vibration, View, Text } from "react-native";
 import * as Haptics from 'expo-haptics'; // Import the Haptics module
 import { styles } from "./styles";
-import ServiceTratamentCard from "../serviceTratamentCard/serviceTratamentCard";
+import Card from "../Card/card";
+
 
 
 export default function ServicesView () {
@@ -43,9 +44,10 @@ export default function ServicesView () {
                     renderItem={({ item }) =>  {
                        
                         return (
-                            <ServiceTratamentCard 
-                                mainText={item.nombre}
-                                obj={item} 
+                            <Card 
+                                obj={item}
+                                styles={styles}
+                                 
                             />
                         );
                     }}
