@@ -6,11 +6,14 @@ export const styles = StyleSheet.create({
     topBarContainer: {
         backgroundColor: '#fff',
         marginTop: 25,
+        height: 65,
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 10,
         paddingVertical: 20,
         justifyContent: 'space-between',
+        
+ 
         
     },
     textContainer: {
@@ -28,4 +31,5 @@ export const styles = StyleSheet.create({
         marginRight: 20,
         
       },
+
 });

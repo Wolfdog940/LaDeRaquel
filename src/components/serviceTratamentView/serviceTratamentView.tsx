@@ -5,7 +5,7 @@ import { ServiceDataProps } from "../../interfaces/serviceDataProps";
 import { fetchServiceTreatmentData } from "../../services/apiServices";
 import * as Haptics from 'expo-haptics'; // Import the Haptics module
 import { styles } from "./styles";
-import Card from "../Card/card";
+import Card from "../Card/Card";
 
 
 export default function serviceTratamentView(){

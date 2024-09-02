@@ -5,7 +5,7 @@ import { ServiceDataProps } from "../../interfaces/serviceDataProps";
 import { FlatList, Vibration, View, Text } from "react-native";
 import * as Haptics from 'expo-haptics'; // Import the Haptics module
 import { styles } from "./styles";
-import Card from "../Card/card";
+import Card from "../Card/Card";
 
 
 

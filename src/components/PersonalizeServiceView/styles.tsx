@@ -2,10 +2,11 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   imageContainer: {
+
     position: 'relative',
     width: '100%',
     height: 350,
-    //marginTop :85// Ajusta según sea necesario
+    //marginTop :80// Ajusta según sea necesario
     
   },
   image: {

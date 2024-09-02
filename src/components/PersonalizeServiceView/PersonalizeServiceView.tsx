@@ -5,7 +5,8 @@ import { PersonalizeServiceData } from "../../interfaces/PersonalizeServiceProps
 import { fetchPersonalizeServiceData } from "../../services/apiServices";
 import { Text } from "react-native";
 import { styles } from "./styles";
-import Card from "../Card/card";
+import Card from "../Card/Card";
+
 
 
 
