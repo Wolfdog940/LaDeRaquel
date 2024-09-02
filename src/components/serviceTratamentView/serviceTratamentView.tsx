@@ -3,9 +3,10 @@ import { FlatList, Text, View } from "react-native";
 import { useFetch } from "../../hooks/useFetch";
 import { ServiceDataProps } from "../../interfaces/serviceDataProps";
 import { fetchServiceTreatmentData } from "../../services/apiServices";
-import ServiceTratamentCard from "../serviceTratamentCard/serviceTratamentCard";
 import * as Haptics from 'expo-haptics'; // Import the Haptics module
 import { styles } from "./styles";
+import Card from "../Card/card";
+
 
 export default function serviceTratamentView(){
     const {data,error} = useFetch ({fetchConst:fetchServiceTreatmentData});
@@ -22,7 +23,6 @@ export default function serviceTratamentView(){
         }
       };
 
-
     useEffect(() => {
         if(data){
             SetserviceTratament(data);
@@ -35,15 +35,14 @@ export default function serviceTratamentView(){
         <View style={styles.container}>
             <Text style={styles.text}>Nuestros servicios </Text>
             <FlatList
-                    
                     data={servicesTratament}
                     keyExtractor={serviceTratament => serviceTratament.imagen}
                     renderItem={({ item }) =>  {
                         item
                         return (
-                            <ServiceTratamentCard 
-                                mainText={item.nombre}
+                            <Card 
                                 obj={item} 
+                                styles={styles}
                             />
                         );
                     }}
@@ -61,5 +60,4 @@ export default function serviceTratamentView(){
                 />
         </View>
     )
-    
 }

@@ -60,64 +60,64 @@ export const data ={
     services: [
       {
         "id": 1,
-        "nombre": "Facial Revitalizante",
+        "titulo": "Facial Revitalizante",
         'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191691/services/facial_rveo1j.jpg'
       },
       {
         "id": 2,
-        "nombre": "Corporal Tonificante",
+        "titulo": "Corporal Tonificante",
         'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191694/services/corporal_gipwla.jpg'
       },
       {
         "id": 3,
-        "nombre": "Bienestar",
+        "titulo": "Bienestar",
         'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191693/services/bienestar_tamaih.jpg'
       },
       {
         "id": 4,
-        "nombre": "Manicura",
+        "titulo": "Manicura",
         'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191691/services/manicura_fpixom.jpg'
       },
       {
         "id": 5,
-        "nombre": "Pedicura",
+        "titulo": "Pedicura",
         'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191692/services/pedicura_xbowf8.jpg'
       },
       {
         "id": 6,
-        "nombre": "Depilación con Cera",
+        "titulo": "Depilación con Cera",
         "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725191707/services/cera_-_copia_hzswc2.jpg"
       },
       {
         "id": 7,
-        "nombre": "Depilación Eléctrica",
+        "titulo": "Depilación Eléctrica",
         'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191692/services/electrica_bmf1qq.jpg'
       },
       {
         "id": 8,
-        "nombre": "Extensión de Pestañas",
+        "titulo": "Extensión de Pestañas",
        'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191692/services/pesta%C3%B1as_d4fuhe.jpg'
       },
       {
         "id": 9,
-        "nombre": "Maquillaje",
+        "titulo": "Maquillaje",
         'imagen': 'https://res.cloudinary.com/wolfdog940/image/upload/v1725191691/services/makeup_whatke.jpg'
       }
     ],
     serviceTreatments:[
       {
         "id": 1,
-        "nombre": "Zionic ",
+        "titulo": "Zionic ",
         "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725201596/service-treatments/zionic_dwrinu.jpg"
       },
       {
         "id": 2,
-        "nombre": "Indiba  ",
+        "titulo": "Indiba  ",
         "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725201634/service-treatments/Untitled-design-15_zld2tm.png"
       },
       {
         "id": 3,
-        "nombre": "Imperium",
+        "titulo": "Imperium",
         "imagen": "https://res.cloudinary.com/wolfdog940/image/upload/v1725201588/service-treatments/imperium_gw1jjo.jpg"
       },
   

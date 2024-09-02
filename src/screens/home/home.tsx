@@ -11,15 +11,14 @@ export default function Home() {
 
 
     return (
-    <ScrollView >
-        <TopBarView/>
-        <PersonalizeServiceView/>
-        <ServicesView/>
-        <ServiceTratamentView/>
-        <WhatsAppContact/>
-        <BottonView/>
-    </ScrollView>
-    
+        <ScrollView >
+            <TopBarView/>
+            <PersonalizeServiceView/>
+            <ServicesView/>
+            <ServiceTratamentView/>
+            <WhatsAppContact/>
+            <BottonView/>
+        </ScrollView>
     )
 }
 
