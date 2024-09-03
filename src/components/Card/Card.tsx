@@ -15,7 +15,7 @@ export default function Card({  obj,styles,button }: CardRefactProps) {
         {obj?.descripcion && <Text style={styles.description}>{obj?.descripcion}</Text>}
         {button && (
           <View style={styles.buttonContainer}>
-            <ButtonNative style={styles.button} title={button?.title ?? ""} onPress={button?.onPress ?? (() => {})}>
+            <ButtonNative style={styles.button} title={button?.title ?? ""} onPress={button?.onPress}>
               <Text style={styles.buttonText}>{button?.title}</Text>
             </ButtonNative>
           </View>

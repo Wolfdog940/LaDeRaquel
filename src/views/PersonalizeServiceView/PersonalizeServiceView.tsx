@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Text } from "react-native";
+import { Text ,Linking,Alert} from "react-native";
 import { styles } from "./styles";
 import { fetchPersonalizeServiceData } from "../../services/apiServices";
 import { useFetch } from "../../hooks/useFetch";
@@ -39,6 +39,17 @@ export default function PersonalizeServiceView() {
         }
     }, [personalizeServiceData]);
 
+        const openWhatsApp = () => {
+       
+        Linking.openURL("https://api.whatsapp.com/send?phone=+34657557672").catch((e) => {
+            Alert.alert(
+                "Error",
+                "No fue posible abrir WhatsApp, contacta al soporte"
+            );
+            console.error(e);
+        });
+    };
+
     return (
         <>
             {personalizeServiceData.length > 0 && number1 >= 0 && number1 < personalizeServiceData.length ? (
@@ -49,7 +60,7 @@ export default function PersonalizeServiceView() {
                     button={{
                         title: 'Reservar cita',
                         onPress: function (): void {
-                            console.log('Reservar cita presionado');
+                            openWhatsApp();;
                         }
                     }}
                 />
