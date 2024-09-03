@@ -1,11 +1,12 @@
-
 import { useState, useEffect } from "react";
-import { useFetch } from "../../hooks/useFetch";
-import { PersonalizeServiceData } from "../../interfaces/PersonalizeServiceProps";
-import { fetchPersonalizeServiceData } from "../../services/apiServices";
 import { Text } from "react-native";
 import { styles } from "./styles";
-import Card from "../Card/Card";
+import { fetchPersonalizeServiceData } from "../../services/apiServices";
+import { useFetch } from "../../hooks/useFetch";
+import { PersonalizeServiceData } from "../../interfaces/PersonalizeServiceProps";
+import Card from "../../components/Card/Card";
+
+
 
 
 

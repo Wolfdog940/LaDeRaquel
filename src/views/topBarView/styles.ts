@@ -1,11 +1,13 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-
+    container: {
+        borderBottomWidth: 1,
+        borderBottomColor: '#d3d3d3',
+    },
     topBarContainer: {
-        // Asegura que esté encima de otros componentes
         backgroundColor: 'red',
-        height: 65,
+        height: '100%',
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 10,
@@ -13,6 +15,6 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     scrollViewContent: {
-        paddingTop: 65, // Ajusta según la altura de la TopBar
+        paddingTop: 65,
     },
 });
